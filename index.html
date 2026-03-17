@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.I Classic Lodge | Premium Stay in Raichur</title>
+    <meta name="description" content="M.I Classic Lodge — a budget-friendly but premium lodge in Raichur, Karnataka offering modern amenities and comfort.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Particle System Vector / Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo-link">
+                <img src="assets/logo.jpeg" alt="M.I Classic Lodge Logo" class="nav-logo">
+                <span class="logo-text">M.I Classic</span>
+            </a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="section">
+        <div class="hero-content float-up">
+            <div class="hero-logo-container float-hover">
+                <img src="assets/logo.jpeg" alt="M.I Classic Lodge" class="hero-logo">
+            </div>
+            <h1 class="glow-text">Elevate Your Stay</h1>
+            <p class="hero-subtitle">Budget-Friendly Comfort. Premium Experience. Raichur.</p>
+            <div class="hero-cta">
+                <a href="#rooms" class="btn btn-gold float-hover-sm">View Rooms</a>
+                <a href="#contact" class="btn btn-outline float-hover-sm">Contact Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container layout-grid observer-target">
+            <div class="about-text">
+                <h2 class="section-title">Discover <span class="gold">M.I Classic</span></h2>
+                <div class="title-underline"></div>
+                <p>Welcome to M.I Classic Lodge, your premier destination for comfortable and budget-friendly accommodation right in the heart of Raichur. Rated 4.4 out of 5 stars by our guests, we pride ourselves on offering a luxurious experience without the luxury price tag.</p>
+                <p>Strategically located nearer to the Bus Stand on Bus Stand Road, Androon Quilla, our lodge provides unparalleled convenience for both business and leisure travelers. Experience the perfect blend of modern amenities, attentive 24-hour service, and a relaxing ambiance.</p>
+                <div class="about-stats">
+                    <div class="stat-item float-item">
+                        <span class="stat-number">4.4<i class="fa-solid fa-star stat-icon"></i></span>
+                        <span class="stat-label">Guest Rating</span>
+                    </div>
+                    <div class="stat-item float-item" style="animation-delay: 0.2s;">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Room Service</span>
+                    </div>
+                    <div class="stat-item float-item" style="animation-delay: 0.4s;">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Comfort</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image float-hover">
+                <div class="image-wrapper">
+                    <img src="assets/lodge_outer (1).jpeg" alt="M.I Classic Lodge Exterior">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section">
+        <div class="container">
+            <div class="section-header observer-target">
+                <h2 class="section-title">World-Class <span class="gold">Amenities</span></h2>
+                <div class="title-underline center"></div>
+                <p class="section-subtitle">Everything you need for a frictionless experience.</p>
+            </div>
+            <div class="amenities-grid">
+                <!-- Amenity Cards -->
+                <div class="amenity-card float-hover observer-target delay-1">
+                    <i class="fa-solid fa-bus amenity-icon"></i>
+                    <h3>Near Bus Stand</h3>
+                    <p>Prime location for easy transit.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-2">
+                    <i class="fa-solid fa-bath amenity-icon"></i>
+                    <h3>Attached Baths</h3>
+                    <p>Standard rooms with private bathrooms.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-3">
+                    <i class="fa-solid fa-tv amenity-icon"></i>
+                    <h3>LED TV</h3>
+                    <p>Premium entertainment in every room.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-1">
+                    <i class="fa-solid fa-wifi amenity-icon"></i>
+                    <h3>Free WiFi</h3>
+                    <p>High-speed internet access.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-2">
+                    <i class="fa-solid fa-temperature-arrow-up amenity-icon"></i>
+                    <h3>Hot Water</h3>
+                    <p>24/7 access to hot water.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-3">
+                    <i class="fa-solid fa-bottle-water amenity-icon"></i>
+                    <h3>Mineral Water</h3>
+                    <p>Complimentary drinking water.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-1">
+                    <i class="fa-solid fa-clock amenity-icon"></i>
+                    <h3>24-Hr Check-in</h3>
+                    <p>Flexible check-in and check-out.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-2">
+                    <i class="fa-solid fa-bolt amenity-icon"></i>
+                    <h3>Power Backup</h3>
+                    <p>Uninterrupted power supply.</p>
+                </div>
+                <div class="amenity-card float-hover observer-target delay-3">
+                    <i class="fa-solid fa-bell-concierge amenity-icon"></i>
+                    <h3>Room Service</h3>
+                    <p>24-hour attentive room service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms & Pricing Section -->
+    <section id="rooms" class="section">
+        <div class="container">
+            <div class="section-header observer-target">
+                <h2 class="section-title">Our <span class="gold">Rooms</span></h2>
+                <div class="title-underline center"></div>
+                <p class="section-subtitle">Comfort tailored to your needs and budget.</p>
+            </div>
+            <div class="rooms-grid">
+                <!-- Single Room -->
+                <div class="room-card tilt-card observer-target delay-1">
+                    <div class="room-img-wrapper">
+                        <img src="assets/rooms (1).jpeg" alt="Single Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Single Room</h3>
+                        <p class="room-desc">Cozy and compact, perfect for solo travelers.</p>
+                        <ul class="room-features">
+                            <li><i class="fa-solid fa-check gold"></i> Single Bed</li>
+                            <li><i class="fa-solid fa-check gold"></i> LED TV</li>
+                            <li><i class="fa-solid fa-check gold"></i> Free WiFi</li>
+                        </ul>
+                        <div class="room-price">
+                            <span>₹599</span> / night
+                        </div>
+                        <a href="#contact" class="btn btn-gold btn-block">Book Now</a>
+                    </div>
+                </div>
+                <!-- Double Room -->
+                <div class="room-card tilt-card observer-target delay-2">
+                    <div class="room-img-wrapper">
+                        <img src="assets/rooms (2).jpeg" alt="Double Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Double Room</h3>
+                        <p class="room-desc">Spacious comfort for couples or dual travelers.</p>
+                        <ul class="room-features">
+                            <li><i class="fa-solid fa-check gold"></i> Double Bed</li>
+                            <li><i class="fa-solid fa-check gold"></i> Attached Bath</li>
+                            <li><i class="fa-solid fa-check gold"></i> 24/7 Room Service</li>
+                        </ul>
+                        <div class="room-price">
+                            <span>₹799</span> / night
+                        </div>
+                        <a href="#contact" class="btn btn-gold btn-block">Book Now</a>
+                    </div>
+                </div>
+                <!-- Deluxe Room -->
+                <div class="room-card tilt-card observer-target delay-3">
+                    <div class="room-img-wrapper">
+                        <img src="assets/rooms (3).jpeg" alt="Deluxe Room">
+                        <div class="badge">Popular</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p class="room-desc">Premium styling and maximum space for the ultimate stay.</p>
+                        <ul class="room-features">
+                            <li><i class="fa-solid fa-check gold"></i> King Size Bed</li>
+                            <li><i class="fa-solid fa-check gold"></i> AC / Climate Control</li>
+                            <li><i class="fa-solid fa-check gold"></i> Premium View</li>
+                        </ul>
+                        <div class="room-price">
+                            <span>₹999</span> / night
+                        </div>
+                        <a href="#contact" class="btn btn-gold btn-block">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header observer-target">
+                <h2 class="section-title">Lodge <span class="gold">Gallery</span></h2>
+                <div class="title-underline center"></div>
+                <p class="section-subtitle">Take a visual tour of our premises.</p>
+            </div>
+            <div class="gallery-masonry">
+                <div class="gallery-item float-item observer-target delay-1">
+                    <img src="assets/outer.jpeg" alt="Lodge View">
+                </div>
+                <div class="gallery-item float-item observer-target delay-2" style="animation-delay: 0.5s;">
+                    <img src="assets/lodge_outer (2).jpeg" alt="Lodge Exterior 2">
+                </div>
+                <div class="gallery-item float-item observer-target delay-3" style="animation-delay: 1s;">
+                    <img src="assets/rooms (4).jpeg" alt="Room View">
+                </div>
+                <div class="gallery-item float-item observer-target delay-1" style="animation-delay: 1.5s;">
+                    <img src="assets/rooms (2).jpeg" alt="Another Room">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <div class="section-header observer-target">
+                <h2 class="section-title">Guest <span class="gold">Experiences</span></h2>
+                <div class="title-underline center"></div>
+                <p class="section-subtitle">What our visitors are saying (4.4 ⭐ average).</p>
+            </div>
+            <div class="reviews-container">
+                <div class="review-bubble float-hover observer-target delay-1">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="quote-text">"Excellent stay at a very budget friendly price. The location is perfect, right near the bus stand. Rooms are clean and the hot water facility is a blessing!"</p>
+                    <div class="review-author">
+                        <div class="author-stars">
+                            ★★★★★
+                        </div>
+                        <h4>Prakash K.</h4>
+                    </div>
+                </div>
+                <div class="review-bubble float-hover observer-target delay-2">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="quote-text">"Very good service. 24 hours room service was prompt and the staff is very polite. The free WiFi was fast enough for my work."</p>
+                    <div class="review-author">
+                        <div class="author-stars">
+                            ★★★★☆
+                        </div>
+                        <h4>Ramesh S.</h4>
+                    </div>
+                </div>
+                <div class="review-bubble float-hover observer-target delay-3">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="quote-text">"Best lodge in Raichur for this price range. Clean attached bathrooms and good LED TV. Will definitely visit again when I'm in town."</p>
+                    <div class="review-author">
+                        <div class="author-stars">
+                            ★★★★★
+                        </div>
+                        <h4>Mohammed A.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header observer-target">
+                <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
+                <div class="title-underline center"></div>
+                <p class="section-subtitle">We're here to assist you 24/7.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info observer-target delay-1">
+                    <div class="info-card float-hover">
+                        <i class="fa-solid fa-location-dot gold"></i>
+                        <h3>Address</h3>
+                        <p>Bus Stand Rd, Androon Quilla<br>Raichur, Karnataka 584101</p>
+                    </div>
+                    <div class="info-card float-hover">
+                        <i class="fa-solid fa-phone gold"></i>
+                        <h3>Phone</h3>
+                        <p>+91 94481 23886</p>
+                    </div>
+                    <div class="info-card float-hover">
+                        <i class="fa-solid fa-envelope gold"></i>
+                        <h3>Email</h3>
+                        <p>miclassiclodge@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-map observer-target delay-2 float-hover">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=M.I+Classic+Lodge,+Bus+Stand+Rd,+Androon+Quilla,+Raichur,+Karnataka+584101&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.jpeg" alt="Logo">
+                <span>M.I Classic</span>
+            </div>
+            <p>&copy; 2026 M.I Classic Lodge. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
