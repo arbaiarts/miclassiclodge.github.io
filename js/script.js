@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initIntersectionObserver();
     initParticleSystem();
     init3DTilt();
+    initRoomToggles();
 });
 
 // --- 1. Navbar Scroll Effect ---
@@ -228,4 +229,31 @@ function init3DTilt() {
         card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
         card.style.boxShadow = `0 10px 30px rgba(0, 0, 0, 0.5)`;
     }
+}
+
+// --- 7. AC / Non-AC Toggle for Room Pricing ---
+function initRoomToggles() {
+    const toggles = document.querySelectorAll('.ac-checkbox');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('change', function() {
+            const card = this.closest('.room-info');
+            if(!card) return;
+            const priceVal = card.querySelector('.price-val');
+            const nonAcLabel = card.querySelector('.toggle-non-ac');
+            const acLabel = card.querySelector('.toggle-ac');
+
+            if (this.checked) {
+                // AC requested
+                priceVal.textContent = '₹' + this.getAttribute('data-ac');
+                if(acLabel) acLabel.classList.add('active');
+                if(nonAcLabel) nonAcLabel.classList.remove('active');
+            } else {
+                // Non-AC requested
+                priceVal.textContent = '₹' + this.getAttribute('data-base');
+                if(nonAcLabel) nonAcLabel.classList.add('active');
+                if(acLabel) acLabel.classList.remove('active');
+            }
+        });
+    });
 }
